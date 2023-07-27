@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>This is the publications page</h2>
-    
+    {% include "navbar2.html" %}
+
+    <div class="container">
+        <h2>Publications</h2>
+        <h5><strong>Peer-Reviewed Publications</strong></h5>
+        <ol start="1">
+            <li>
+                <p>Pauline Hervé, Scott D. Tiegs, Séraphine Grellier, Karl Matthias Wantzen & Francis Isselin-Nondedeu
+                </p>
+
+                <p><i><a href="https://link.springer.com/article/10.1007/s13157-018-1091-9"> Combined Effects of
+                            Vegetation and Drought on Organic-Matter Decomposition in Vernal Pool Soils</a></i></p>
+            </li>
+            <li>
+                <p>Pauline Hervé, Scott D. Tiegs, Séraphine Grellier, Karl Matthias Wantzen & Francis Isselin-Nondedeu
+                </p>
+                <p><i><a href="https://link.springer.com/article/10.1007/s13157-018-1091-9"> Combined Effects of
+                            Vegetation and Drought on Organic-Matter Decomposition in Vernal Pool Soils</a></i></p>
+            </li>
+        </ol>
+
+
+    </div>
+    {% include "footer.html" %}
+
+
 </body>
+
 </html>

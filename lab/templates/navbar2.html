@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatic Labs</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'lab/navbar2.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <input for="" type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label for="" class="logo">Aquatic Labs</label>
+        <ul>
+            <li><a href="{% url 'home'%}" class="navlink {% if navbar == 'publications'%} active {% endif%}" class="active">Home</a></li>
+            <li><a href="{% url 'blog'%}" class="navlink {% if navbar == 'blog'%} active {% endif%}">Blog</a></li>
+            <li><a href="{% url 'publications'%}" class="navlink {% if navbar == 'publications'%} active {% endif%}">Publications</a></li>
+            <li><a href="{% url 'people'%}" class="navlink {% if navbar == 'people'%} active {% endif%}">People</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
